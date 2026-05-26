@@ -4,6 +4,7 @@ It powers core NixOS architecture like package overrides, overlays, and the enti
 A mathematical fixed point occurs when:
 
 `(f(x) = x)`
+
 In Nix:
 
 `fix = f: let x = f x; in x;`
