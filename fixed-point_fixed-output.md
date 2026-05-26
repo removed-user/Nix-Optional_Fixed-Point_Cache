@@ -1,4 +1,5 @@
 # A simplified conceptual view of a fixed-point package cache
+```nix
 let
   cacheFun = final: {
     # Each entry is an individual fixed-output derivation
@@ -22,3 +23,4 @@ let
   packageCache = builtins.fix cacheFun;
 in
   packageCache
+```
