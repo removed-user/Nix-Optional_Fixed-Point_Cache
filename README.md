@@ -8,5 +8,6 @@ A mathematical fixed point occurs when:
 In Nix:
 
 `fix = f: let x = f x; in x;`
+
 This recursion resolves safely at runtime without crashing into infinite loops... 
 for as long as you don't create circular value dependencies.
